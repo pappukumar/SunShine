@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--header android:fragment="app.com.example.android.sunshine.SettingsActivity"
+        android:icon="@drawable/ic_launcher"
+        android:title="Sun Shine Preferences"
+        android:summary="Some other preferences you can see.">
+        <!-Arbitrary key/value pairs can be included with a header as
+             arguments to its fragment. ->
+        <extra android:name="someKey" android:value="someHeaderValue" />
+    </header-->
+
+    <EditTextPreference android:fragment="app.com.example.android.sunshine.SettingsActivity$Prefs1Fragment"
+        android:key="@string/pref_location_key"
+        android:title="@string/pref_location_label"
+        android:defaultValue="@string/pref_location_default"
+        android:inputType="text"
+        android:singleLine="true"/>
+</PreferenceScreen>
